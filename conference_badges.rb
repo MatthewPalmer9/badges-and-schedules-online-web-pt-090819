@@ -10,10 +10,10 @@ def batch_badge_creator(array)
   return newArray
 end 
 
-def assign_rooms(array)
+def assign_rooms(attendees)
   newArray = []
   count = 0
-  array.each() { |element| 
+  attendees.each() { |element| 
     count += 1
     newArray.push("Hello, #{element}! You'll be assigned to room #{count}!")
   }
